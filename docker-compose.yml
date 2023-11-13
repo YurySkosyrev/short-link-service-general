@@ -6,7 +6,7 @@ services:
     environment:
       - REDIS_PASSWORD=root
 #    ports:
-#      - "3307:3306"
+#      - "6379:6379"
   adminer:
     image: adminer
     restart: always

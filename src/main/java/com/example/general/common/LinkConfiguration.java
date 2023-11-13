@@ -1,5 +1,6 @@
 package com.example.general.common;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import java.util.LinkedList;
@@ -8,6 +9,7 @@ import java.util.Queue;
 @Configuration
 public class LinkConfiguration {
 
+    @Bean
     Queue<String> linksQueue() {
         Queue<String> res = new LinkedList<>();
         String base = "qwerrtyuiopasdfghjklzxcvbnm1234567890";
