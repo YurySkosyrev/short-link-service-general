@@ -20,7 +20,7 @@ public class LinkJob {
     }
 
 
-    @Scheduled(fixedRate = 500L)
+    @Scheduled(fixedRate = 1000L)
     public void freeLink(){
         ShortLink shortLink = linksService.randomPull();
         if(shortLink != null){

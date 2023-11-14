@@ -39,6 +39,10 @@ public class LinksServiceGeneral implements LinksService{
 
     @Override
     public ShortLink randomPull() {
-        return get(randomKey());
+        String randomKey = randomKey();
+        if (randomKey != null) {
+            return get(randomKey());
+        }
+        return null;
     }
 }
